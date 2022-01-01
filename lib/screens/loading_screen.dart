@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:clima/services/networking.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
-const apiKey = 'd1c00825de72e92e1d64c9d383389f8e';
-
 class LoadingScreen extends StatefulWidget {
   @override
   _LoadingScreenState createState() => _LoadingScreenState();
