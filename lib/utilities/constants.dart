@@ -20,12 +20,12 @@ const kConditionTextStyle = TextStyle(
 );
 
 const inputDecor = InputDecoration(
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(10)),
-                          borderSide: BorderSide.none),
-                      filled: true,
-                      icon: Icon(
-                        Icons.location_city,
-                      ),
-                      hintText: 'Enter City name',
-                      hintStyle: TextStyle(color: Colors.white))
+    border: OutlineInputBorder(
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+        borderSide: BorderSide.none),
+    filled: true,
+    icon: Icon(
+      Icons.location_city,
+    ),
+    hintText: 'Enter City name',
+    hintStyle: TextStyle(color: Colors.white));
