@@ -81,6 +81,11 @@ class _LocationScreenState extends State<LocationScreen> {
                           return CityScreen();
                         }),
                       );
+                      if (typedName != null) {
+                        var weatherData =
+                            await weather.getCityWeather(typedName);
+                        updateUI(weatherData);
+                      }
                     },
                     child: Icon(
                       Icons.location_city,
@@ -91,7 +96,7 @@ class _LocationScreenState extends State<LocationScreen> {
               ),
               Padding(
                 padding: EdgeInsets.only(left: 15.0),
-                child: Row(
+                child: Column(
                   children: <Widget>[
                     Text(
                       '$temperature°',
